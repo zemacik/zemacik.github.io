@@ -1,0 +1,39 @@
+title: Michal Krchnavy personal website
+email: michal@krchnavy.sk
+
+description: "Stretnutie web developerov v Bratislave a Prešove, prednášky, prezentácie"
+baseurl: ""
+url: "http://www.krchnavy.sk"
+
+anchors:
+  github: '<a href="https://github.com/zemacik" target="_blank">Github</a>'
+  twitter: '<a href="https://twitter.com/zemacik" target="_blank">Twitter</a>'
+  facebook: '<a href="https://facebook.com/michal.krchnavy" target="_blank">Facebook</a>'
+
+links:
+  twitter: https://twitter.com/zemacik
+  github: https://github.com/zemacik
+  facebook: https://facebook.com/michal.krchnavy
+
+timezone: "Europe/Bratislava"
+
+markdown: kramdown
+
+exclude:
+  - bower.json
+  - README.md
+  - CNAME
+  - LICENSE
+  - vendor
+  - fontello
+  - composer.json
+  - composer.lock
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - css
+  - _build
+
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
