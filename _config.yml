@@ -16,7 +16,7 @@ links:
   facebook: https://facebook.com/michal.krchnavy
 
 timezone: "Europe/Bratislava"
-
+permalink: /blog/:year/:month/:day/:title
 markdown: kramdown
 
 exclude:
