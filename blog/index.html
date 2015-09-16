@@ -1,14 +1,11 @@
 ﻿---
 layout: default
-title: Hank Quinlan's Blog
-description: fdnginifud huuingifg huifgniu hutifn
 ---
 
 <ul>
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    {{ post.excerpt }}
   </li>
   {% endfor %}
 </ul>
