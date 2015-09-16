@@ -5,7 +5,8 @@ description: "Lorem gnfdiugn nguinn gntunguid gnutngui gutn u"
 date: 2014-04-30
 ---
 
-<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.
+
 <hr>
 <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
 <blockquote>
