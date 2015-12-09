@@ -1,39 +1,17 @@
-title: Michal Krchnavy personal website
+title: Michal Krchňavý Blog
+url: http://krchnavy.sk
+description: Adventures in the high-tech underbelly
 email: michal@krchnavy.sk
 
-description: "Stretnutie web developerov v Bratislave a Prešove, prednášky, prezentácie"
-baseurl: ""
-url: "http://www.krchnavy.sk"
-
-anchors:
-  github: '<a href="https://github.com/zemacik" target="_blank">Github</a>'
-  twitter: '<a href="https://twitter.com/zemacik" target="_blank">Twitter</a>'
-  facebook: '<a href="https://facebook.com/michal.krchnavy" target="_blank">Facebook</a>'
-
-links:
-  twitter: https://twitter.com/zemacik
-  github: https://github.com/zemacik
-  facebook: https://facebook.com/michal.krchnavy
-
-timezone: "Europe/Bratislava"
-permalink: /blog/:year/:month/:day/:title
+highlighter: pygments
 markdown: kramdown
+excerpt_separator: "\n\n"
 
-exclude:
-  - bower.json
-  - README.md
-  - CNAME
-  - LICENSE
-  - vendor
-  - fontello
-  - composer.json
-  - composer.lock
-  - node_modules
-  - gulpfile.js
-  - package.json
-  - css
-  - _build
+permalink: /blog/:year/:month/:day/:title/
+timezone: Europe/Bratislava
 
-gems:
-  - jekyll-sitemap
-  - jekyll-redirect-from
+paginate: 15
+
+safe: true
+lsi: false
+exclude: [.gitignore, CNAME, Dockerfile, README.md]
