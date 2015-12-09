@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogpost
 title: "Hank Quinlan, Horrible Cop, Launches Site"
 description: "Lorem gnfdiugn nguinn gntunguid gnutngui gutn u"
 date: 2014-04-30
