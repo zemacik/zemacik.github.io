@@ -1,22 +1,27 @@
 --- 
 layout: blog 
 ---
-<ul class="posts content">
-    <li>
 
-        <div class="post_preheader">
-            <span>
+<div class="row">
+    <div class="col-md-offset-2 col-sm-8 col-md-7 content">
+        <ul class="posts content">
+            <li>
+
+                <div class="post_preheader">
+                    <span>
                 {{ page.date | date: "%B %-d, %Y" }} 
             </span>
-        </div>
+                </div>
 
-        <div class="post_header">
-            <b>{{ page.title }}</b>
-        </div>
+                <div class="post_header">
+                    <b>{{ page.title }}</b>
+                </div>
 
-        <div id="post">
-            {{ content }}
-        </div>
+                <div id="post">
+                    {{ content }}
+                </div>
 
-    </li>
-</ul>
+            </li>
+        </ul>
+    </div>
+</div>
