@@ -15,3 +15,6 @@ paginate: 15
 safe: true
 lsi: false
 exclude: [.gitignore, CNAME, Dockerfile, README.md]
+
+gems:
+ - jekyll-paginate
