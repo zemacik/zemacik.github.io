@@ -32,12 +32,6 @@ h1.title {
 
 .site_title {
     color: #ffffff;
-    position: relative;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
     font-weight: bold;    
 }
 
