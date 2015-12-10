@@ -219,7 +219,7 @@ nav h1, nav h2 {
     min-height: 400px;
   }
   
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .content {
     border-left: 1px solid #DDD;
     padding-left: 40px;
