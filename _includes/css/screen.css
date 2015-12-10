@@ -213,12 +213,17 @@ nav h1, nav h2 {
   font-weight: 600;
 }
 
-.content {
-  font: 400 14px/22px "open sans", sans-serif;
-  border-left: 1px solid #DDD;
-  padding-left: 40px;
-  padding-top: 25px;
-  min-height: 400px;
+  .content {
+    font: 400 14px/22px "open sans", sans-serif;
+    padding-top: 25px;
+    min-height: 400px;
+  }
+  
+@media (min-width: 992px) {
+  .content {
+    border-left: 1px solid #DDD;
+    padding-left: 40px;
+  }
 }
 
 .footer {
