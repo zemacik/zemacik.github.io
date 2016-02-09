@@ -44,7 +44,7 @@ Cesta pre SQL Server Management studio 2014 sa nachádza:
 Pre ostatné verzie mysime vestu upraviť cestu:
 
 | Verzia                     | Priečinok |
-|----------------------------|-----------|
+|:----------------------------|----------:|
 |Microsoft SQL Server 2014   |120        |
 |Microsoft SQL Server 2012   |110        |
 |Microsoft SQL Server 2008 R2|100        |
