@@ -176,6 +176,7 @@ nav h1, nav h2 {
 #post ul,
 #post ol {
   margin-left: 1.35em;
+  margin-bottom: 10px;
 }
 
 #post code {
