@@ -39,7 +39,7 @@ Potrebujeme nájsť súbor so šablónou. Pre každú verziu Management studia s
 
 Cesta pre SQL Server Management studio 2014 sa nachádza:
 
-> c:\Program Files (x86)\Microsoft SQL Server\**120**\Tools\Binn\ManagementStudio\SqlWorkbenchProjectItems\Sql\SQLFile.sql
+> c:\Program Files (x86)\Microsoft SQL Server\\**120**\Tools\Binn\ManagementStudio\SqlWorkbenchProjectItems\Sql\SQLFile.sql
 
 Pre ostatné verzie mysime vestu upraviť cestu:
 
