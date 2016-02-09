@@ -58,5 +58,9 @@ Pre ostatné verzie mysime vestu upraviť cestu:
 4. A po stlačení "New query" dostaneme nový súbor vyplnený našou šablónou 
 
 
+### Výsledok
+![Result in screenshot]({{ site.url }}/assets/posts/2016/20160209_SQLManagementStudioTemplate_Screenshot.png)
+{: class="img img-responsive"}
+
 **Poznámka:**
 Prosím majte na pamäti že tento súbor je spoločný pre všetkých používateľov daného počítača.
