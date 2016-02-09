@@ -1,8 +1,8 @@
 ---
 layout: blogpost
 type: post
-title: "Predvolený obsah \"New query\" okna v SQL Server Management Studio"
-description: "Ukazeme si ako si prevolit sablonu pre novy query v management studio"
+title: "Predvolený obsah \"New query\" okna v SQL Server Management Studio (SK)"
+description: "Ukážeme si ako si prevoliť šablónu pre nový query v management studio"
 date: 2016-02-09
 categories:
 - SQL
