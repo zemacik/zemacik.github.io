@@ -44,16 +44,18 @@ Cesta pre SQL Server Management studio 2014 sa nachádza:
 Pre ostatné verzie mysime vestu upraviť cestu:
 
 | Verzia                     | Priečinok |
-|:----------------------------|----------:|
+|:---------------------------|----------:|
 |Microsoft SQL Server 2014   |120        |
 |Microsoft SQL Server 2012   |110        |
 |Microsoft SQL Server 2008 R2|100        |
 |Microsoft SQL Server 2008   |100        |
 
 
-1. Súbor modifikujeme podľa modla svojej vôle, ja používam template uvedený vyššie  
-2. Uložíme 
-3. A po stlačení "New query" dostaneme nový súbor vyplnený našou šablónou 
+1. Otvoríme súbor ako administrátor
+2. Súbor modifikujeme podľa modla svojej vôle, ja používam template uvedený vyššie  
+3. Uložíme 
+4. A po stlačení "New query" dostaneme nový súbor vyplnený našou šablónou 
 
-Poznámka:
+
+*Poznámka:*
 Prosím majte na pamäti že tento súbor je spoločný pre všetkých používateľov daného počítača.
