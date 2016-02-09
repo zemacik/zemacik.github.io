@@ -58,6 +58,5 @@ Pre ostatné verzie mysime vestu upraviť cestu:
 4. A po stlačení "New query" dostaneme nový súbor vyplnený našou šablónou 
 
 
-*Poznámka:*
-
+**Poznámka:**
 Prosím majte na pamäti že tento súbor je spoločný pre všetkých používateľov daného počítača.

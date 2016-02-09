@@ -322,3 +322,8 @@ sup {
   vertical-align: super;
   font-size: smaller;
 }
+
+
+blockquote {
+    font-size: 14px;
+}
