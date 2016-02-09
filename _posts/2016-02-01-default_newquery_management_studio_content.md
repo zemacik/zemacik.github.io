@@ -1,7 +1,7 @@
 ---
 layout: blogpost
-title: "Predvolený obsah "New query" okna v SQL Server Management Studio"
-description: "TIP: Predvolený obsah "New query" okna v SQL Server Management Studio"
+title: "Predvolený obsah \"New query\" okna v SQL Server Management Studio"
+description: "TIP: Predvolený obsah \"New query\" okna v SQL Server Management Studio"
 date: 2016-02-09
 ---
 
