@@ -25,14 +25,12 @@ Samozrejme ak nepotrebujeme transakciu obsah jednoducho zmažeme :)
 Obsah ktorý si vložíme do šablóny.
 
 {% highlight sql %}
-```sql
 BEGIN TRANSACTION;
 
 /** CONTENT HERE */
 
 ROLLBACK TRANSACTION;
 --COMMIT TRANSACTION;
-```
 {% endhighlight %}
 
 ### Takže ako na to?
@@ -40,6 +38,7 @@ ROLLBACK TRANSACTION;
 Potrebujeme nájsť súbor so šablónou. Pre každú verziu Management studia sa súbor nachádza v inej lokalite.
 
 Cesta pre SQL Server Management studio 2014 sa nachádza:
+
 > c:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\SqlWorkbenchProjectItems\Sql\SQLFile.sql
 
 Pre ostatné verzie mysime vestu upraviť cestu:
