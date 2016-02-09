@@ -1,11 +1,14 @@
 ---
 layout: blogpost
+type: post
 title: "Predvolený obsah \"New query\" okna v SQL Server Management Studio"
-description: "TIP: Predvolený obsah \"New query\" okna v SQL Server Management Studio"
+description: "Ukazeme si ako si prevolit sablonu pre novy query v management studio"
 date: 2016-02-09
+categories:
+- SQL
+tags: [sql, tools]
+published: true
 ---
-
-# TIP: Predvolený obsah "New query" okna v SQL Server Management Štúdio
 
 Mám pre vás jeden tip, ktorý určite trošku zefektívni vašu prácu v SQL Server management štúdiu, a ak nie tak aspoň Vám zachráni zadok.
  
@@ -20,6 +23,8 @@ Nastavíme si predvolený obsah, tak aby sme mali defaultné náš query ktorý 
 Samozrejme ak nepotrebujeme transakciu obsah jednoducho zmažeme :)
 
 Obsah ktorý si vložíme do šablóny.
+
+{% highlight sql %}
 ```sql
 BEGIN TRANSACTION;
 
@@ -28,7 +33,7 @@ BEGIN TRANSACTION;
 ROLLBACK TRANSACTION;
 --COMMIT TRANSACTION;
 ```
-
+{% endhighlight %}
 
 ### Takže ako na to?
 
