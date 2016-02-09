@@ -49,7 +49,7 @@ Pre ostatné verzie mysime vestu upraviť cestu:
 |Microsoft SQL Server 2012   |110        |
 |Microsoft SQL Server 2008 R2|100        |
 |Microsoft SQL Server 2008   |100        |
-
+{: class="table"}
 
 1. Otvoríme súbor ako administrátor
 2. Súbor modifikujeme podľa modla svojej vôle, ja používam template uvedený vyššie  
