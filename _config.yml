@@ -3,7 +3,7 @@ url: http://krchnavy.sk
 description: Dobrodruzstva vyvojara
 email: michal@krchnavy.sk
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 excerpt_separator: "\n\n"
 

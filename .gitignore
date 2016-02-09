@@ -1,5 +1,7 @@
 *.swp
 _site/
 .vscode/
+_drafts_ignore/
+_posts_ignore/
 
 
