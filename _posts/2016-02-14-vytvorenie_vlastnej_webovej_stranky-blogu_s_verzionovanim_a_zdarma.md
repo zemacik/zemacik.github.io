@@ -18,19 +18,19 @@ Nechcel som použiť ťažkopádny moloch menom Wordpress. Človek sa on musí s
 Je to generátor statických stránok. Predstavte si že máme sériu šablón t.j. textových súborov, (ktoré v našom prípade budeme hosťovať na Githube) a potom z nich pomocou nášho nástroja Jekyll vygenerujeme kompletnú štruktúru statickej webovej stránky (čiže: HTML, CSS, JŠ a obrázkov)
 
 ### Prečo jekyll?
- Statických generátorov stránok existuje mnoho. Ja som zvolil Jekyll pretože ho priamo podporuje platforma Github pages. Jekyll môžete rozchodiť aj u seba lokálne na počítači, poprípade hosťovať u svojo poskytovateľa, ale o tom možno niekedy inokedy. Ja osobne fungujem tak, že som si odladil šablóny, a teraz komitujem nové šablóny priamo na github, kde ak nastane chyba pri generovať mojej statickej stránky, je mi doručený email.
+ Statických generátorov stránok existuje mnoho. Ja som zvolil Jekyll pretože ho priamo podporuje platforma Github pages. Jekyll môžete rozchodiť aj u seba lokálne na počítači, poprípade hosťovať u svojho poskytovateľa, ale o tom možno niekedy inokedy. Ja osobne fungujem tak, že som si odladil šablóny, a teraz komitujem nové šablóny priamo na github, kde ak nastane chyba pri generovať mojej statickej stránky, je mi doručený email.
  
  Na začiatku, kým si všetko odladíte, bude vám tých mailov choď viac.
 
 
 ### Výhody
-- HTML stránky sú velmi rýchle
+- HTML stránky sú veľmi rýchle
 - Statické stránky sú bezpečné (samozrejme pokiaľ máme dobre zabezpečený server)
 
 ### Nevýhody
 
-- Statické stránky sú statické, asi ťažko tam pridáme akýkoľvek formulár na zber údajov. Čo ale môžme, je embedovat časti stránok ako [Google forms][12], alebo [wufoo][11].
-- Nie je úplne vhodný na firemné stránky, kedže asi nie každý člen teamu bude ochotný sa učiť pracovať s Gitom
+- Statické stránky sú statické, asi ťažko tam pridáme akýkoľvek formulár na zber údajov. Čo ale môžeme, je embedovat časti stránok ako [Google forms][12], alebo [wufoo][11].
+- Nie je úplne vhodný na firemné stránky, keďže asi nie každý člen teamu bude ochotný sa učiť pracovať s Gitom
 
 ### Ako začať?
 Samozrejme prečítaním Jekyll dokumentácie :). Ale týmto spôsobom som ja nešiel. Miesto toho som si našiel na githube zaujímavú už hotovú šablónu (git repozitár [poole][2]) a upravil ju podľa svojich potrieb. 
@@ -61,12 +61,12 @@ Najdôležitejší súbor celého projektu je `config.yml`. Je to súbor vo form
 Definujeme v ňom:
 
 - názov našej webstránky, autora, popis, poprípade kontakt
-- formát markdown samblon
+- formát markdown šablón
 - akým spôsobom budú vytvárané permanentné linky na príspevky blogu
 - formát stránkovania blogu
 - a mnoho iného (viď. [dokumentácia][10])
 
-Priečinky `_includes` a `_layouts` obsahujú Liquid šablóny, z ktorích nakoniec vznikne naša vygenerovaná statická stránka. `Liquid` nám pridáva dynamický obsah, do našich statických stránok.
+Priečinky `_includes` a `_layouts` obsahujú Liquid šablóny, z ktorých nakoniec vznikne naša vygenerovaná statická stránka. `Liquid` nám pridáva dynamický obsah, do našich statických stránok.
 
 Priečinok `_posts` obsahuje všetky príspevky blogu vo formáte `Markdown`. Github pages používajú kramdown syntax pre Markdown.
 
@@ -74,7 +74,7 @@ Priečinok `_posts` obsahuje všetky príspevky blogu vo formáte `Markdown`. Gi
 
 Súbor `index.html` obsahuje úvodnú stránku blogu.
 
-Iné statické stránky vytvoríme, jednoducho ako súbory v daného repositara, ako je v našom prípade napríklad `about.md`. Tento súbor bude tak isto pretransformovaný do HTML, a skopírovaný do priečinka `_site`, čiže dostupný na našej stránke.
+Iné statické stránky vytvoríme, jednoducho ako súbory v daného repozitára, ako je v našom prípade napríklad `about.md`. Tento súbor bude tak isto pretransformovaný do HTML, a skopírovaný do priečinka `_site`, čiže dostupný na našej stránke.
 
 
 <!--# Prisposobenie stranky-->
@@ -82,7 +82,7 @@ Iné statické stránky vytvoríme, jednoducho ako súbory v daného repositara,
 
 ### Použitie vlastnej domény
 
-Ak už vlasnú doménu máte (napríklad. jankohrasko.sk) a chcete aby vaša novo vzniknutá stránka bola prístupná z tejto adresy, musíte vytvoriť CNAME záznam v DNS konfigurácii svojej domény 
+Ak už vlastnú doménu máte (napríklad. jankohrasko.sk) a chcete aby vaša novo vzniknutá stránka bola prístupná z tejto adresy, musíte vytvoriť CNAME záznam v DNS konfigurácii svojej domény 
 
 > www.jankohrasko2.sk.                    CNAME	jankohrasko2.github.io.
 
@@ -92,11 +92,11 @@ a následne vytvoriť v repozitáre súbor s menom `CNAME` do ktoré vložíte n
 
 Pre bližšie informácie si môžete prečítať dokumentáciu o [nastavení na github pages][3].
 
-### Ďalšie zdoje, a odkazy
+### Ďalšie zdroje, a odkazy
 - [Jekyll dokumentácia][4]
 - [Github pages][5]
-- [Pripravený repositar s Jekyll šablónou][1]
-- [Kramdown][6] dokumentácia (Markdown parser a convertor používaný v githup pages)
+- [Pripravený repozitár s Jekyll šablónou][1]
+- [Kramdown][6] dokumentácia (Markdown parser a konvertor používaný v githup pages)
 - [jankohrasko2.github.io][7] - príklad forknutej a nasadenej Jekyll šablóny
 - [Visual Štúdio Code][8]
 - [Liquid markup dokumentácia][9] 
