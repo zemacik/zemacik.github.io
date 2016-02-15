@@ -116,4 +116,4 @@ Pre bližšie informácie si môžete prečítať dokumentáciu o [nastavení na
 [10]: http://jekyllrb.com/docs/configuration/ "Jekyll konfigurácia"
 [11]: http://www.wufoo.com/ "wufoo"
 [12]: https://www.google.sk/intl/sk/forms/about/ "Google forms"
-[100]: {% post_url 2016-02-15-pouzivame_generator_jekyll_na_lokalnom_pocitaci %} "Google forms"
+[100]: {% post_url 2016-02-15-pouzivame_generator_jekyll_na_lokalnom_pocitaci %} "Pouzitie na lokalnom PC"
