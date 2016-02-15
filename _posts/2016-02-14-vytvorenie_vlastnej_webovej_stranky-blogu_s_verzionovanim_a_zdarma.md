@@ -14,49 +14,49 @@ Celkom nedávno sa mi poradilo rozbehnúť môj blog, a veľmi rád by som sa s 
 
 Nechcel som použiť ťažkopádny moloch menom Wordpress. Človek sa on musí starať, t.j. kontrolovať či stránka beží, aktualizovať, dávať pozor aká aktualizácia nám rozbije zásuvné moduly a pod. A nechcel som aby bola platforma mojím pánom. Miesto toho som použil generátor Jekyll a platformu `Github pages`. Na "Github pages" môžete hosťovať svoju stránku úplne zdarma. [Ale o tom trošku neskôr.][100]
 
-### Takže čo je to ten Jekyll?
+## Takže čo je to ten Jekyll?
 Je to generátor statických stránok. Predstavte si že máme sériu šablón t.j. textových súborov, (ktoré v našom prípade budeme hosťovať na Githube) a potom z nich pomocou nášho nástroja Jekyll vygenerujeme kompletnú štruktúru statickej webovej stránky (čiže: HTML, CSS, JŠ a obrázkov)
 
-### Prečo jekyll?
+## Prečo jekyll?
  Statických generátorov stránok existuje mnoho. Ja som zvolil Jekyll pretože ho priamo podporuje platforma Github pages. Jekyll môžete rozchodiť aj u seba lokálne na počítači, poprípade hosťovať u svojho poskytovateľa, ale o tom možno niekedy inokedy. Ja osobne fungujem tak, že som si odladil šablóny, a teraz komitujem nové šablóny priamo na github, kde ak nastane chyba pri generovať mojej statickej stránky, je mi doručený email.
- 
+
  Na začiatku, kým si všetko odladíte, bude vám tých mailov choď viac.
 
 
-### Výhody
+## Výhody
 - HTML stránky sú veľmi rýchle
 - Statické stránky sú bezpečné (samozrejme pokiaľ máme dobre zabezpečený server)
 
-### Nevýhody
+## Nevýhody
 
 - Statické stránky sú statické, asi ťažko tam pridáme akýkoľvek formulár na zber údajov. Čo ale môžeme, je embedovat časti stránok ako [Google forms][12], alebo [wufoo][11].
 - Nie je úplne vhodný na firemné stránky, keďže asi nie každý člen teamu bude ochotný sa učiť pracovať s Gitom
 
-### Ako začať?
-Samozrejme prečítaním Jekyll dokumentácie :). Ale týmto spôsobom som ja nešiel. Miesto toho som si našiel na githube zaujímavú už hotovú šablónu (git repozitár [poole][2]) a upravil ju podľa svojich potrieb. 
+## Ako začať?
+Samozrejme prečítaním Jekyll dokumentácie :). Ale týmto spôsobom som ja nešiel. Miesto toho som si našiel na githube zaujímavú už hotovú šablónu (git repozitár [poole][2]) a upravil ju podľa svojich potrieb.
 
-Ja som pre vás pripravil upravenú verziu, (Nájdete ju samozrejme tiež na githube repozitár [gihubpages-emptytemplate][1]). Si môžete jednoducho forknut (urobiť kópiu vo svojom úcte) a upraviť. 
+Ja som pre vás pripravil upravenú verziu, (Nájdete ju samozrejme tiež na githube repozitár [gihubpages-emptytemplate][1]). Si môžete jednoducho forknut (urobiť kópiu vo svojom úcte) a upraviť.
 
-### Čo budeme potrebovať
+## Čo budeme potrebovať
 1. V prvom rade si vytvorte účet na Githube.
 2. Následne si vytvorte, alebo forknite repozitár, ktorý som spomínal vyššie. (Či už [poole][2], alebo [gihubpages-emptytemplate][1])
 3. Premenujte forknutý repozitár podľa vášho účtu, tak že na koniec pridáte `.githib.io` na koniec. Takže napríklad ak je vás login jankohrasko, nový repozitár sa bude volať `jankohrasko.guthub.io`
 4. Počkať pár minút, a otvoriť si vo webovom prehliadači stránku z adresou ktorú ste si vytvorili, v našom prípade `http://jankohrasko.github.io`
 
-<br/>
+<br />
 ![Skrátene](/assets/posts/2016/20160214_01_postup.gif){: class="img img-responsive"}
-<br/>
+<br />
 
-### Popis šablóny
+## Popis šablóny
 v prípade že ste išli cestou naklonovania existujúceho repozitára, základné rozloženie je nasledovné:
 ![Skrátene](/assets/posts/2016/20160214_02_rozloznie_repository.png){: class="img img-responsive" }
-<br/>
+<br />
 
 Keď spustíte Jekyll, vytvorí priečinok menom `_site` so statickým obsahom vo vnútry. Každý priečinok v repozitáre bude skopírovaný do priečinka `_site`, pokiaľ neobsahuje na začiatku názvu podtrhovnik (napr. "_toto-je-ignorovane").
 
-Súbory vo formáte Markdown budú automaticky pretransformované do HTML. 
+Súbory vo formáte Markdown budú automaticky pretransformované do HTML.
 
-Najdôležitejší súbor celého projektu je `config.yml`. Je to súbor vo formáte YAML, a obsahuje konfiguráciu nášho Jekyll projektu. 
+Najdôležitejší súbor celého projektu je `config.yml`. Je to súbor vo formáte YAML, a obsahuje konfiguráciu nášho Jekyll projektu.
 
 Definujeme v ňom:
 
@@ -76,13 +76,15 @@ Súbor `index.html` obsahuje úvodnú stránku blogu.
 
 Iné statické stránky vytvoríme, jednoducho ako súbory v daného repozitára, ako je v našom prípade napríklad `about.md`. Tento súbor bude tak isto pretransformovaný do HTML, a skopírovaný do priečinka `_site`, čiže dostupný na našej stránke.
 
+**Upozornenie**: Veľmi doležité pri práci s jekyll je, že každý súbor musí byť uložený vo formáte `UTF8 bez popisnej hlavicky` reps. `UTF8 without BOM`, alebo ešte inak `UTF8 without Signature`
+{:class="alert alert-warning"}
+
 
 <!--# Prisposobenie stranky-->
 
+## Použitie vlastnej domény
 
-### Použitie vlastnej domény
-
-Ak už vlastnú doménu máte (napríklad. jankohrasko.sk) a chcete aby vaša novo vzniknutá stránka bola prístupná z tejto adresy, musíte vytvoriť CNAME záznam v DNS konfigurácii svojej domény 
+Ak už vlastnú doménu máte (napríklad. jankohrasko.sk) a chcete aby vaša novo vzniknutá stránka bola prístupná z tejto adresy, musíte vytvoriť CNAME záznam v DNS konfigurácii svojej domény
 
 > www.jankohrasko2.sk.                    CNAME	jankohrasko2.github.io.
 
@@ -92,14 +94,14 @@ a následne vytvoriť v repozitáre súbor s menom `CNAME` do ktoré vložíte n
 
 Pre bližšie informácie si môžete prečítať dokumentáciu o [nastavení na github pages][3].
 
-### Ďalšie zdroje, a odkazy
+## Ďalšie zdroje, a odkazy
 - [Jekyll dokumentácia][4]
 - [Github pages][5]
 - [Pripravený repozitár s Jekyll šablónou][1]
 - [Kramdown][6] dokumentácia (Markdown parser a konvertor používaný v githup pages)
 - [jankohrasko2.github.io][7] - príklad forknutej a nasadenej Jekyll šablóny
 - [Visual Štúdio Code][8]
-- [Liquid markup dokumentácia][9] 
+- [Liquid markup dokumentácia][9]
 
 
 
