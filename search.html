@@ -1,0 +1,46 @@
+---
+layout: blogposts
+title: Vyhľadávanie
+permalink: /search/
+sitemap: false
+---
+ 
+ <!--https://cse.google.com/cse/-->
+ 
+ <h1>Výsledky vyhľadávania</h1>
+ 
+<style>
+     
+.reset-box-sizing,
+.reset-box-sizing *,
+.reset-box-sizing *:before,
+.reset-box-sizing *:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+ 
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button 
+{
+  box-sizing: content-box;
+  line-height: normal;
+  color: black;
+}
+   
+</style>
+ 
+<div id="home-search" class="home reset-box-sizing">
+<script>
+  (function() {
+    var cx = '{{ site.data.theme.google_custom_search }}';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+     <gcse:search ></gcse:search>
+ </div>

@@ -1,50 +1,60 @@
 <!-- Header -->
 <header class="navbar navbar-inverse bs-docs-nav">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".header-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand site_title" href="/" >{{ site.title }}</a>
-    </div>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".header-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand site_title" href="/">{{ site.title }}</a>
+        </div>
 
-    <div class="collapse navbar-collapse header-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/archive">Archív</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projekty<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://www.savilio.com" target="_blank">Savilio.com - video link extractor</a></li>
-            <li><a href="http://www.pouzite.sk" target="_blank">Použité.sk - bazar online</a></li>
-            <li><a href="http://www.nasevydavky.sk" target="_blank">Naševýdavky.sk - výdavky pod kontrolou</a></li>
-          </ul>
-        </li>
-        <!--<li class="dropdown">
+        <div class="collapse navbar-collapse header-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/archive">Archív</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projekty<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://www.savilio.com" target="_blank">Savilio.com - video link extractor</a></li>
+                        <li><a href="http://www.pouzite.sk" target="_blank">Použité.sk - bazar online</a></li>
+                        <li><a href="http://www.nasevydavky.sk" target="_blank">Naševýdavky.sk - výdavky pod kontrolou</a></li>
+                    </ul>
+                </li>
+                <!--<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Komponenty a nástroje<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/dev/components/edSingleSlider">Single slider (jQuery UI Widget)</a></li>
             <li><a href="/dev/components/edScreenCapture">Nástroj na snímanie obrazovky (MS Windows)</a></li>
           </ul>
         </li>-->
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Zaujímavé nástroje<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="http://diakritika.brm.sk/">Dopĺnač diakritiky</a></li>
-            <!--<li><a href="http://head.wall.sk/odstranenie_diakritiky/">Odstránenie diakritiky</a></li>-->
-            <li><a href="http://jsonprettyprint.com/">JSON Pretty Print</a></li>
-            <li><a href="http://jsonformat.com/">JSON formatter 2</a></li>
-            <li><a href="http://jsbeautifier.org/">Deobfuscate JavaScript</a></li>
-            <li><a href="http://www.togglecase.com/convert_to_camelcase.php">CamelCase Generator</a></li>
-            <li><a href="http://www.onlineocr.net/">Online OCR</a></li>
-            <li><a href="http://meyerweb.com/eric/tools/dencoder/">URL Encoder / decoder</a></li>
-            <li><a href="http://onlinecurl.com/">Online cUrl</a></li>
-          </ul>
-        </li>
-      </ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Zaujímavé nástroje<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://diakritika.brm.sk/">Dopĺnač diakritiky</a></li>
+                        <!--<li><a href="http://head.wall.sk/odstranenie_diakritiky/">Odstránenie diakritiky</a></li>-->
+                        <li><a href="http://jsonprettyprint.com/">JSON Pretty Print</a></li>
+                        <li><a href="http://jsonformat.com/">JSON formatter 2</a></li>
+                        <li><a href="http://jsbeautifier.org/">Deobfuscate JavaScript</a></li>
+                        <li><a href="http://www.togglecase.com/convert_to_camelcase.php">CamelCase Generator</a></li>
+                        <li><a href="http://www.onlineocr.net/">Online OCR</a></li>
+                        <li><a href="http://meyerweb.com/eric/tools/dencoder/">URL Encoder / decoder</a></li>
+                        <li><a href="http://onlinecurl.com/">Online cUrl</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="col-sm-3 col-md-3 pull-right">
+                <form class="navbar-form" role="search" action="{{site.baseurl}}/search/">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm" placeholder="Zadaj dotaz..." name="q" id="q">
+                        <div class="input-group-btn input-group-sm">
+                            <button class="btn btn-default btn-sm" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
 </header>
