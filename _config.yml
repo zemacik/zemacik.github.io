@@ -3,6 +3,7 @@ url: http://zemacik.github.io
 description: Dobrodruzstva vyvojara
 email: michal@krchnavy.sk
 
+encoding: utf-8
 markdown: kramdown
 excerpt_separator: "\n\n"
 
