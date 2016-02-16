@@ -15,7 +15,7 @@ Celkom nedávno sa mi poradilo rozbehnúť môj blog, a veľmi rád by som sa s 
 Nechcel som použiť ťažkopádny moloch menom Wordpress. Človek sa on musí starať, t.j. kontrolovať či stránka beží, aktualizovať, dávať pozor aká aktualizácia nám rozbije zásuvné moduly a pod. A nechcel som aby bola platforma mojím pánom. Miesto toho som použil generátor Jekyll a platformu `Github pages`. Na "Github pages" môžete hosťovať svoju stránku úplne zdarma. [Ale o tom trošku neskôr.][100]
 
 ## Takže čo je to ten Jekyll?
-Je to generátor statických stránok. Predstavte si že máme sériu šablón t.j. textových súborov, (ktoré v našom prípade budeme hosťovať na Githube) a potom z nich pomocou nášho nástroja Jekyll vygenerujeme kompletnú štruktúru statickej webovej stránky (čiže: HTML, CSS, JŠ a obrázkov)
+Je to generátor statických stránok. Predstavte si že máme sériu šablón t.j. textových súborov, (ktoré v našom prípade budeme hosťovať na Githube) a potom z nich pomocou nášho nástroja Jekyll vygenerujeme kompletnú štruktúru statickej webovej stránky (čiže: HTML, CSS, JS a obrázkov)
 
 ## Prečo jekyll?
  Statických generátorov stránok existuje mnoho. Ja som zvolil Jekyll pretože ho priamo podporuje platforma Github pages. Jekyll môžete rozchodiť aj u seba lokálne na počítači, poprípade hosťovať u svojho poskytovateľa, ale o tom možno niekedy inokedy. Ja osobne fungujem tak, že som si odladil šablóny, a teraz komitujem nové šablóny priamo na github, kde ak nastane chyba pri generovať mojej statickej stránky, je mi doručený email.
@@ -35,13 +35,13 @@ Je to generátor statických stránok. Predstavte si že máme sériu šablón t
 ## Ako začať?
 Samozrejme prečítaním Jekyll dokumentácie :). Ale týmto spôsobom som ja nešiel. Miesto toho som si našiel na githube zaujímavú už hotovú šablónu (git repozitár [poole][2]) a upravil ju podľa svojich potrieb.
 
-Ja som pre vás pripravil upravenú verziu, (Nájdete ju samozrejme tiež na githube repozitár [gihubpages-emptytemplate][1]). Si môžete jednoducho forknut (urobiť kópiu vo svojom úcte) a upraviť.
+Ja som pre vás pripravil upravenú verziu, (Nájdete ju samozrejme tiež na githube repozitár [gihubpages-emptytemplate][1]). Si môžete jednoducho forknut (urobiť kópiu vo svojom účte) a upraviť.
 
 ## Čo budeme potrebovať
 1. V prvom rade si vytvorte účet na Githube.
 2. Následne si vytvorte, alebo forknite repozitár, ktorý som spomínal vyššie. (Či už [poole][2], alebo [gihubpages-emptytemplate][1])
-3. Premenujte forknutý repozitár podľa vášho účtu, tak že na koniec pridáte `.githib.io` na koniec. Takže napríklad ak je vás login jankohrasko, nový repozitár sa bude volať `jankohrasko.guthub.io`
-4. Počkať pár minút, a otvoriť si vo webovom prehliadači stránku z adresou ktorú ste si vytvorili, v našom prípade `http://jankohrasko.github.io`
+3. Premenujte forknutý repozitár podľa vášho účtu, tak že na koniec pridáte `.github.io` na koniec. Takže napríklad ak je váš login jankohrasko2, nový repozitár sa bude volať `jankohrasko.github.io`
+4. Počkať pár minút, a otvoriť si vo webovom prehliadači stránku z adresou ktorú ste si vytvorili, v našom prípade `http://jankohrasko2.github.io`
 
 <br />
 ![Skrátene](/assets/posts/2016/20160214_01_postup.gif){: class="img img-responsive"}
@@ -84,11 +84,11 @@ Iné statické stránky vytvoríme, jednoducho ako súbory v daného repozitára
 
 ## Použitie vlastnej domény
 
-Ak už vlastnú doménu máte (napríklad. jankohrasko.sk) a chcete aby vaša novo vzniknutá stránka bola prístupná z tejto adresy, musíte vytvoriť CNAME záznam v DNS konfigurácii svojej domény
+Ak už vlastnú doménu máte (napríklad. jankohrasko2.sk) a chcete aby vaša novo vzniknutá stránka bola prístupná z tejto adresy, musíte vytvoriť CNAME záznam v DNS konfigurácii svojej domény
 
 > www.jankohrasko2.sk.                    CNAME	jankohrasko2.github.io.
 
-a následne vytvoriť v repozitáre súbor s menom `CNAME` do ktoré vložíte názov po ktorým je vaša stránka prístupná.
+a následne vytvoriť v repozitáre súbor s menom `CNAME` do ktorého vložíte názov vašej novo zvniknutej stránky. Či už je to `www.jankohrasko2.sk` alebo `jankohrasko2.github.io`.  
 
 > www.jankohrasko2.sk
 
