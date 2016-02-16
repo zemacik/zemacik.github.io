@@ -19,7 +19,20 @@ layout: blog
                 <div id="post">
                     {{ content }}
                 </div>
-
+                
+                {% if page.canshare %}
+                <div class="postshare">
+                    <h2>Páčil sa ti príspevok ?</h1>
+                    {% include postshare.html %}
+                </div>
+                {% endif %}
+                                
+                {% if page.comments %}
+                <div class="comments">
+                    <h2>Komentáre</h2>
+                    {% include comments.html %}
+                </div>
+                {% endif %}
             </li>
         </ul>
     </div>

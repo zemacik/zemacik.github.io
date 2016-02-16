@@ -8,6 +8,8 @@ categories:
 - Jekyll
 tags: [github, jekyll, tutorial]
 published: true
+canshare: true
+comments: true
 ---
 
 Celkom nedávno sa mi poradilo rozbehnúť môj blog, a veľmi rád by som sa s vami podelil ako som to docielil.

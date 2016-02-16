@@ -8,6 +8,8 @@ categories:
 - SQL
 tags: [sql, tools]
 published: true
+canshare: true
+comments: true
 ---
 
 Mám pre vás jeden tip, ktorý určite trošku zefektívni vašu prácu v SQL Server management štúdiu, a ak nie tak aspoň Vám zachráni zadok.

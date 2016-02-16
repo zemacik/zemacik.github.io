@@ -8,6 +8,8 @@ categories:
 - Jekyll
 tags: [jekyll, tutorial]
 published: true
+canshare: true
+comments: true
 ---
 
 V [predchádzajúcom príspevku][100] som popisoval ako rozbehnúť vlastnú stránku / blog postavenú na statickom generátore stránok `Jekyll`, a platforme `Github pages`. 
