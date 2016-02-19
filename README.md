@@ -1,2 +1,2 @@
-# zemacik.github.io
+# zemacik.github.io (http://blog.krchnavy.sk/)
 

@@ -1,5 +1,5 @@
 ﻿title: Michal Krchňavý blog
-url: http://zemacik.github.io
+url: http://blog.krchnavy.sk/
 description: Dobrodruzstva vyvojara
 email: michal@krchnavy.sk
 
@@ -7,12 +7,12 @@ encoding: utf-8
 markdown: kramdown
 excerpt_separator: "\n\n"
 
-permalink: /blog/:year/:month/:day/:title
+permalink: /:year/:month/:day/:title
 
 timezone: Europe/Bratislava
 
 paginate: 15
-paginate_path: "/blog/archive/page:num/"
+paginate_path: "/archive/page:num/"
 
 #safe: true
 lsi: false
