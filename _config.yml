@@ -7,12 +7,12 @@ encoding: utf-8
 markdown: kramdown
 excerpt_separator: "\n\n"
 
-permalink: /:year/:month/:day/:title
+permalink: /posts/:year/:month/:day/:title
 
 timezone: Europe/Bratislava
 
 paginate: 15
-paginate_path: "/archive/page:num/"
+paginate_path: "/posts/archive/page:num/"
 
 #safe: true
 lsi: false
