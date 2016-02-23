@@ -195,7 +195,7 @@ Ak všetko dobre pôjde, naše rozšírenie sa zobrazí či už v zozname [naši
 **Upozornenie**: Počas toho ako som sa snažil vypublikovať rozšírenie do marketplace bol bug nástroji `vsce` vo verzii 1.1.0. 
 Dlho som pátral v čom je problém, a zistil som že do balíčka neboli pripálené závislosti balíčkov (vnorené balíčky resp. priečinky 
 node_modules). Skúsil som urobiť downgrade nástroja vsce na verziu 1.0.0. Chyba sa tu neprejavovala. Bez problémov prebehla 
-publikácia, nainštalovanie, a následne používanie balíčka bez problémov. V čase písania článku bola najnovšia verzia vsce 1.1.0. 
+publikácia, nainštalovanie, a následné používanie. V čase písania článku bola najnovšia verzia vsce 1.1.0. 
 Downgrade npm balíčka som urobil nasledovne. 1. `npm uninstall vsce` 2. `npm install vsce@1.0.0` 
 {:class="alert alert-warning"}
 
