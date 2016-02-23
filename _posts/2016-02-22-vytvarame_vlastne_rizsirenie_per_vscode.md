@@ -71,7 +71,7 @@ Na vytvorenie samotného rozšírenia som postupoval podľa návodu na [stránke
 
 4. Ďalej di môžeme vybrať aký typ rozšírenia chceme vygenerovať. Ja osobne som použil rozšírenie programované v [Typescripte][6].
 
-![Running Yo code command](/assets/posts/2016/20160222_01_running_yo_code.png){: class="img img-responsive"}
+    ![Running Yo code command](/assets/posts/2016/20160222_01_running_yo_code.png){: class="img img-responsive"}
 
 5. Vyplníme údaje ktoré po nás generátor požaduje. Publisher Name môžete získame na stránke [Publish Extensions][7]. 
 Linka je schovaná dolu na strake s [rozšíreniami][8] pre VS Code. Ak niektoré údaje teraz zlé vyplníte, nič sa nebojte. 
@@ -100,42 +100,40 @@ načíta obsah aktuálneho priečinka.
 
 ## Zopár tipov.
 
-1. Vo VS Code môžete bez problémov `debugovať` dane rozšírenie. Cez `F5` spustite projekt v debug režime. môžete si 
+- Vo VS Code môžete bez problémov `debugovať` dane rozšírenie. Cez `F5` spustite projekt v debug režime. môžete si 
 nastaviť breakpointy, krokovať, a iné bežne činnosti vývojára.
  
 ![Breakpoint](/assets/posts/2016/20160222_02_Breakpoint.png){: class="img img-responsive"}
 
-2. Testovanie rozšírenia prebieha tiež vo VS Code, ale je spustený v špeciálnom režime. Tzv. 'Extension Development Host'
+- Testovanie rozšírenia prebieha tiež vo VS Code, ale je spustený v špeciálnom režime. Tzv. 'Extension Development Host'
 
-3. Aj keď samotný vývoj rozšírenia bol relatívne bez problémov, v čase publikovania som dostával kompilačné chyby 
+- Aj keď samotný vývoj rozšírenia bol relatívne bez problémov, v čase publikovania som dostával kompilačné chyby 
 typescriptu, že nevie nájsť ten a ten modul.  Následne som zistil že ak importujem do svojej triedy *externú závislosť* 
 nainštalovanú cez `npm`, musím ju importovať cez `require`, ak importujem závislosť z môjho projektu použijem bežný `import`. 
 
-{% highlight typescript %}
-import DiacriticsAdder from './diacriticsAdder';
-import * as vscode from 'vscode';
+    {% highlight typescript %}
+    import DiacriticsAdder from './diacriticsAdder';
+    import * as vscode from 'vscode';
 
-var fs = require('fs');
-var DiacriticsRemover = require('diacritics');
-{% endhighlight %}
+    var fs = require('fs');
+    var DiacriticsRemover = require('diacritics');
+    {% endhighlight %}
 
-> Ešte si musím upratať v hlave, ako to je stými `import`, `require`, `typecriptom`, `ES5`, a `ES6` modulmi. Možno 
-som robil chybu niekde ja.
+> Ešte si musím upratať v hlave, ako to je stými `import`, `require`, `typecriptom`, `ES5`, a `ES6` modulmi. Možno som robil chybu niekde ja.
 
-
-4. Ak by ste potrebovali zistiť cestu kde sa rozšírenie nachádza v už keď je nainštalované (napríklad z dôvodu že ste 
+- Ak by ste potrebovali zistiť cestu kde sa rozšírenie nachádza v už keď je nainštalované (napríklad z dôvodu že ste 
 do rozšírenia pribalili rôzne assets) zistíte to priamo v aktivačnej metóde daného rozšírenia, a to z kontektu:
-{% highlight typescript %}
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
-export function activate(context: vscode.ExtensionContext) {       
-    var path = context.extensionPath;
-    .
-    .
-}    
-{% endhighlight %}
+    {% highlight typescript %}
+    // this method is called when your extension is activated
+    // your extension is activated the very first time the command is executed
+    export function activate(context: vscode.ExtensionContext) {       
+        var path = context.extensionPath;
+        .
+        .
+    }    
+    {% endhighlight %}
 
-5. Chybu s nepribalenými node_modules som zistil až za behu, ak som si rozšírenie nainštaloval z Marketplace. IDE mi oznámilo 
+- Chybu s nepribalenými node_modules som zistil až za behu, ak som si rozšírenie nainštaloval z Marketplace. IDE mi oznámilo 
 len že nemá handling pre môj zvolený command. a nič viac. Ako postupovať v tomto prípade? Chvíľku mi trvalo, kým mi docvaklo, že `VS
 Code` je postavené na technológií  `Electron`, a tam predsa sú integrované developer tools. :) Takže `Help -> Toggle Developer tools` 
 nám zapne vývojársku konzolu takú ako poznáme s prehliadača Google Chrome, s ňou konzolu, a aj všetky chyby.     
