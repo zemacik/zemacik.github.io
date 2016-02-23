@@ -15,8 +15,7 @@ comments: true
 Nedávno som vypublikoval svoje prvé rozšírenie pre Visual Studio Code (VS Code). Dnes by som chcel v pár 
 riadkoch zhrnúť s čím som sa musel popasovať. Ako som spomínal v [minulom príspevku][100], na písanie blogov
 používam Visual Studio Code, a keď píšem, aby som pravdu povedal, nepoužívam diakritiku. Som na to 
-tak zvyknutý, a tak mi to vyhovuje. Proste píšem rýchlejšie. Následne použijem dáky nástroj ktorý 
-mi diakritiku pridá automaticky.
+tak zvyknutý, a tak mi to vyhovuje. Následne použijem nástroj ktorý mi diakritiku pridá automaticky.
 
 Donedávna som používal [stránku brm.sk/diakritika][1]. Ale ešte som si chcel prácu uľahčiť, tak som sa rozhodol,
 spojiť príjemné s užitočným a vytvoriť rozšírenie do editora Visual Studio Code. 
