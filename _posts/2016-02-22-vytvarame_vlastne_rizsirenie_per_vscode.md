@@ -202,7 +202,7 @@ Downgrade npm balíčka som urobil nasledovne. 1. `npm uninstall vsce` 2. `npm i
 
 ## Publikovanie - tipy a triky 
 
-Všetky nastavenia vizuálu stránky s [detailom rozsirenia][12] sú preberané zo súboru `package.json` nášho projektu.
+Všetky nastavenia vizuálu stránky s [detailom rozšírenia][12] sú preberané zo súboru `package.json` nášho projektu.
 
 #### Readme.md
 Súbor `Readme.md` bude kompletne prebratý z nášho projektu do detailu rozšírenia ako popis balíčka. 
