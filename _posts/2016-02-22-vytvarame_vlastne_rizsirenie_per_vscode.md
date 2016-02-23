@@ -25,7 +25,7 @@ spojiť príjemné s užitočným a vytvoriť rozšírenie do editora Visual Stu
 
 ## Čo budeme potrebovať?
 
-Keďže samotné VS Code je naprogramované v javascripte, nad jadrom Elektrón, aj rozšírenia pre tento editor sa 
+Keďže samotné VS Code je naprogramované v javascripte, nad jadrom `Electron`, aj rozšírenia pre tento editor sa 
 neprogramujú v ničom inom.
 
 #### Node.js
