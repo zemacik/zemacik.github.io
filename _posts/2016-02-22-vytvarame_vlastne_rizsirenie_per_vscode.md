@@ -253,12 +253,12 @@ Ako príklad, alebo zdroj inšpirácie môžete použiť [moje rozšírenie][12]
 [2]: https://nodejs.org/en/download/stable/ "Node.js download"
 [3]: http://yeoman.io/ "Yeoman"
 [4]: https://www.npmjs.com/package/vsce "VSCE"
-[5]: https://code.visualstudio.com/docs/extensions/example-hello-world [VS Code example hello world]
-[6]: http://www.typescriptlang.org/ [Typescript]
-[7]: https://marketplace.visualstudio.com/manage [Publish Extensions]
-[8]: https://marketplace.visualstudio.com/#VSCode [VS Code Extensions]
-[9]: https://signup.live.com/  [Vytvorenie Live uctu]
-[10]: https://code.visualstudio.com/docs/tools/vscecli [vsce - Publishing Tool Reference]
-[11]: https://marketplace.visualstudio.com/manage/publishers/ [Zoznam mojich rozsireni]
-[12]: https://marketplace.visualstudio.com/items?itemName=MichalKrchnavy.vscode-diakritika-sk-extension [Moje rozsirenie]
+[5]: https://code.visualstudio.com/docs/extensions/example-hello-world "VS Code example hello world"
+[6]: http://www.typescriptlang.org/ "Typescript"
+[7]: https://marketplace.visualstudio.com/manage "Publish Extensions"
+[8]: https://marketplace.visualstudio.com/#VSCode "VS Code Extensions"
+[9]: https://signup.live.com/  "Vytvorenie Live uctu"
+[10]: https://code.visualstudio.com/docs/tools/vscecli [vsce - "Publishing Tool Reference"
+[11]: https://marketplace.visualstudio.com/manage/publishers/ "Zoznam mojich rozsireni"
+[12]: https://marketplace.visualstudio.com/items?itemName=MichalKrchnavy.vscode-diakritika-sk-extension "Moje rozsirenie"
 [100]: {% post_url 2016-02-14-vytvorenie_vlastnej_webovej_stranky-blogu_s_verzionovanim_a_zdarma %} "vytvorenie_vlastnej_webovej_stranky-blogu_s_verzionovanim_a_zdarma"
