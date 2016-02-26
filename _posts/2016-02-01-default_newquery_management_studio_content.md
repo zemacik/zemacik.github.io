@@ -27,12 +27,18 @@ Samozrejme ak nepotrebujeme transakciu obsah jednoducho zmažeme :)
 Obsah ktorý si vložíme do šablóny.
 
 {% highlight sql %}
-BEGIN TRANSACTION;
+BEGIN TRY
+    BEGIN TRANSACTION;
 
-/** CONTENT HERE */
+    /** CONTENT HERE */
 
-ROLLBACK TRANSACTION;
---COMMIT TRANSACTION;
+    ROLLBACK TRANSACTION;
+    --COMMIT TRANSACTION;
+END TRY
+BEGIN CATCH
+    ROLLBACK;
+    THROW;
+END CATCH
 {% endhighlight %}
 
 ### Takže ako na to?
