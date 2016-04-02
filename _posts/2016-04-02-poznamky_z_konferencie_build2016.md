@@ -12,8 +12,9 @@ canshare: true
 comments: true
 ---
 
-####Termín: 30.03.2016 - 01.04.2016
-####Videá: [Channel 9](https://channel9.msdn.com/Events/Build/2016)
+#### Termín: 30.03.2016 - 01.04.2016
+
+#### Videá: [Channel 9](https://channel9.msdn.com/Events/Build/2016)
 
 V tomto príspevku by som chcel zhrňúť moje zápisky z konferencie Build 2016, ktorá skončila len asi pred 12timi hodinami.
 
@@ -60,6 +61,7 @@ V tomto príspevku by som chcel zhrňúť moje zápisky z konferencie Build 2016
 - [Azure Functions](https://azure.microsoft.com/en-us/services/functions/)
 
 ---
+
 ## Den 2
 ### Keynote
 
@@ -97,6 +99,7 @@ V tomto príspevku by som chcel zhrňúť moje zápisky z konferencie Build 2016
 - Azure Service Fabric je v produkcii
 
 ---
+
 ## Den 3
 ### Keynote
 
