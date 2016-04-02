@@ -114,6 +114,10 @@ nebola
 
 ## Prednášky
 
+V tejto sekcii sú zápisky z prednášok ktoré som stihol zatiaľ odpozerať
+
+<br/>
+
 - Prednaska: **[Visual Studio 2015 Extensibility](https://channel9.msdn.com/Events/Build/2016/B886)**
     - Od: Mads Kristensen
     - Extensibility Tool 2015 - súbor nástrojov, šablón na to aby sme mohli písať vlastne rozšírenia pre VS 2015
