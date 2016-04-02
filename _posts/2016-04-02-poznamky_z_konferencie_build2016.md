@@ -12,11 +12,11 @@ canshare: true
 comments: true
 ---
 
-#### Termín: 30.03.2016 - 01.04.2016
-
-#### Videá: [Channel 9](https://channel9.msdn.com/Events/Build/2016)
-
 V tomto príspevku by som chcel zhrňúť moje zápisky z konferencie Build 2016, ktorá skončila len asi pred 12timi hodinami.
+
+**Termín konania:** 30.03.2016 - 01.04.2016
+
+**Videá, záznamy prednášok:** [Channel 9](https://channel9.msdn.com/Events/Build/2016)
 
 --- 
 
@@ -26,9 +26,9 @@ V tomto príspevku by som chcel zhrňúť moje zápisky z konferencie Build 2016
 
 **Visual Studio**
 
-- Visual Studio 2015 Update 2
+- vydané Visual Studio 2015 Update 2
 - nové Visual Studio 15 Preview
-    - veľmi svižne, zrýchlenie niektorých komponent, a úkonov až o 1000 %
+    - veľmi svižné, zrýchlenie niektorých komponent, a úkonov až o 1000 %
     - rýchla inštalácia (cca do 5 min.)
 
 **Vývoj**
@@ -93,12 +93,13 @@ V tomto príspevku by som chcel zhrňúť moje zápisky z konferencie Build 2016
 
 - [Microsoft SQL Server Developer Edition is now free](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/31/microsoft-sql-server-developer-edition-is-now-free/?wt.mc_id=WW_CE_DM_OO_SCL_TW&Ocid=C+E%20Social%20FY16_Social_TW_SQLServer_20160331_414281610)
 
-**Ostatne**
+**Ostatné**
 
-- *Azure DocumentDB* má [zmenenú cenovú politiku ](https://azure.microsoft.com/en-us/pricing/details/documentdb/) odvíjajúcu sa podľa rýchlosti, a množstva dát ktoré sú kladené na DB
-- Azure DocumentDB podporuje klientov MongoDB (čiže MongoDB protokol). Wow !
-- Azure DocumentDB už podporuje geo replikáciu
-- Azure Service Fabric je v produkcii
+- *Azure DocumentDB* 
+    - má [zmenenú cenovú politiku ](https://azure.microsoft.com/en-us/pricing/details/documentdb/) odvíjajúcu sa podľa rýchlosti, a množstva dát ktoré sú kladené na DB
+    - podporuje klientov MongoDB (čiže MongoDB protokol). Wow !
+    - podporuje geo replikáciu
+- *Azure Service Fabric* je v produkcii
 
 ---
 

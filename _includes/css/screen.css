@@ -16,6 +16,7 @@ body {
   padding-bottom: 64px;
 }
 
+
 .header {
     background-color: {{ site.data.theme.highlight_color }};
 }
@@ -118,6 +119,10 @@ ul.posts li {
   margin-bottom: 0px;
 }
 
+ul.posts li > ul {
+    margin-top: 0;
+}
+
 ul.posts span {
   color: #aaa;
   padding-right: 5px;
@@ -165,6 +170,10 @@ nav h1, nav h2 {
 
 .post_preheader {
     border-bottom: 1px solid #eee;
+}
+
+#post {
+   margin-bottom: 70px; 
 }
 
 #post pre {
