@@ -21,6 +21,7 @@ V tomto príspevku by som chcel zhrňúť moje zápisky z konferencie Build 2016
 --- 
 
 ## Deň 1
+
 ### Keynote
 
 **Visual Studio**
@@ -63,6 +64,7 @@ V tomto príspevku by som chcel zhrňúť moje zápisky z konferencie Build 2016
 ---
 
 ## Den 2
+
 ### Keynote
 
 **Xamarin**
@@ -101,6 +103,7 @@ V tomto príspevku by som chcel zhrňúť moje zápisky z konferencie Build 2016
 ---
 
 ## Den 3
+
 ### Keynote
 
 nebola
