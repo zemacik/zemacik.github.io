@@ -149,7 +149,7 @@ V tejto sekcii sú zápisky z prednášok ktoré som stihol zatiaľ odpozerať
         - importovanie namespaces do views
         - importovanie tag helperov
     - TagHelpers
-        - podľa moho názoru čistý bordel :-/
+        - podľa môjho názoru čistý bordel :-/
         - vôbec neriešia hlavný problém, s vytváraním znovu použiteľných komponetov
         - čím viac na ne pozerám, tým viac viem že ich nechcem používať, a s najväčšou pravdepodobnosťou začnem písať UI konečne ako SPA (či už s použitím Aurelia aleo Angular frameworku), a .NET Core bude iba ako API vrstva + bootstrap webu.
 
