@@ -5,9 +5,9 @@ title: "Nefungujúce intellisense vo Visual Studio 2015 (SK)"
 description: "Nefungujúce intellisense vo Visual Studio 2015"
 date: 2016-05-23
 categories:
-- Visual studio
+- Visual Studio
 tags: [IDE, Tip]
-published: false
+published: true
 canshare: true
 comments: true
 ---
@@ -21,6 +21,6 @@ Takže, keď budete riešiť podobný problém, snáď vám tiež pomôže to č
 - zo všetkých projektových priečinkov v sollution vymažte `*.user` súbory.
 - vymažte `.vs\[sollution name]\v14\.suo` súbor
 
-Následne stačí reštartovať Visual Studio, otvoriť projekt, a intellisense by mapa o5 fungovať.
+Následne stačí reštartovať Visual Studio, otvoriť projekt, a intellisense by malo o5 fungovať.
 
 
