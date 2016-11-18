@@ -14,7 +14,7 @@ comments: true
 
 Zopár dní dozadu som riešil problém s Visual Studio 2015, kde mi z ničoho nič prestal fungovať intellisense v Xamarin.Forms projekte. 
 
-Keďže problém sa mi podarilo vyriešiť až po pár hodinách, kde som vyskúšal už asi všetko čo sa dalo, no a predsa len ostávala ešte jedna možnosť, ešte pred preinštalovaním celého IDE :) alebo minimálne Xamarinu.
+Keďže problém sa mi podarilo vyriešiť až po pár hodinách, kde som vyskúšal už asi všetko čo sa dalo, no a predsa len ostávala jedna možnosť, ešte pred preinštalovaním celého IDE :) alebo minimálne Xamarinu.
 
 Takže, keď budete riešiť podobný problém, snáď vám tiež pomôže to čo mne, a to:
 
