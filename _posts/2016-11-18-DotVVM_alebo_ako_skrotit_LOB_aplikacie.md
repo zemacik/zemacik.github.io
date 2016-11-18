@@ -24,7 +24,7 @@ Z pohľadu .NET vývojára máme dnes v zásade tri cesty akými sa vieme vydať
 
 Môžeme použiť staré ASP.NET WebForms. WebForms nám ponúkali vývoj založený na stránkach a komponentoch. **Na vývoj LOB aplikácií to bolo ako stvorené.** Veľa programátorov koncept nepochopilo, akékoľvek rozvrstvenie aplikácií neexistovalo, a všetka biznis logika bola v samotných stránkach. Aplikácia nebola testovateľná, a po určitom čase bola neudržiavateľná.
 
-Ďalší nešvár WebForms aplikácií bol následne **vygenerovaný HTML kód**, ktorý na dobu s pred 10 rokov možno stačil. Dnes keď potrebujeme aplikáciu cieliť na viac zariadení, obrazoviek, máme responzíviny dizajn táto technológia je takmer nepoužiteľná.
+Ďalší nešvár WebForms aplikácií bol následne **vygenerovaný HTML kód**, ktorý na dobu s pred 10 rokov možno stačil. Dnes keď potrebujeme aplikáciu cieliť na viac zariadení, obrazoviek, máme responzívny dizajn táto technológia je takmer nepoužiteľná.
 
 Taktiež spojenie WebForms s javascriptom nebolo moc prívetivé.
 
@@ -45,7 +45,7 @@ Pri tomto spôsobe vývoja aplikácie, takmer **na všetko potrebujeme vytvára�
 
 Na všetko toto musíme myslieť pri vývoji aplikácie nad ASP.NET MVC
 
-Taktiež potrebujeme veľa, veľa javascriptoveho kódu.
+Taktiež potrebujeme veľa, veľa javascriptového kódu.
 
 Ak chceme mať aspoň trochu dynamickú stránku, **na všetko potrebujeme javascriptové knižnice**, alebo si funkcionalitu napíšeme sami. Toto všetko udržiavať je celkom výzva.
 
@@ -55,7 +55,7 @@ Ak chceme mať aspoň trochu dynamickú stránku, **na všetko potrebujeme javas
 
 No a tretia možnosť, dnes veľmi moderná, je vývoj SPA (Single page application) v niektorom z tento týždeň populárnych frameworkov, ako sú napríklad Angular JS, React, Vue.js, Aurelia poprípade Ember.js.
 
-Pre mnohé firmy presedlať na tento spôsob vývoja može znamenať vynaloženie značného úsilia, času a finančných prostriedkov do zaškolenia programátorov. Programátori si musia osvojiť veľa nových zručností, konceptov, a technológií.
+Pre mnohé firmy presedlať na tento spôsob vývoja môže znamenať vynaloženie značného úsilia, času a finančných prostriedkov do zaškolenia programátorov. Programátori si musia osvojiť veľa nových zručností, konceptov, a technológií.
 
 Ale na rovinu. Nie je to úplne jednoduché sa vo svete javascriptu orientovať.
 
@@ -68,7 +68,7 @@ Ak berieme ohľad aj na udržiavanie existujúceho kódu, .NET platforma je rela
 ## Na scénu prichádza DotVVM
 ---
 
-Frustráciu s vývojom webových aplikácií nepociťujem len ja, ale aj ludia z firmy Riganti, konkrétne Tomáš Herceg. On a jeho tím sa rozhodli napísať svoj vlastný framework - DotVVM.
+Frustráciu s vývojom webových aplikácií nepociťujem len ja, ale aj ľudia z firmy [Riganti](http://www.riganti.cz/), konkrétne [Tomáš Herceg](https://twitter.com/hercegtomas). On a jeho tím sa rozhodli napísať svoj vlastný framework - DotVVM.
 
 Investovali doň nemálo času. A ako on sám spomínal na jednej svojej prednáške, že keby ohodnotil čas ktorý frameworku vo firme venovali, tak by si mohol kúpiť Teslu. :)
 
@@ -78,7 +78,7 @@ Ako Tomáš sám o ňom na prednáškach hovorí, píšete v ňom "javascriptov�
 
 Perfektne sa hodí na vývoj Line of Business (LOB) aplikácií. Hlavne na data entry business aplikácie kde sa rieši kopec formulárov, ich vzťahy a pod. 
 
-Napríklad také aplikácie poisťovní, bánk, ... Vynikajúci príklad je taký formulár na poistenie PZP, zložitejší wizard, kde nasledujúca obrazovka zobrazuje polia podľa hodnôt stránky predzhádzajúcej. 
+Napríklad také aplikácie poisťovní, bánk, ... Vynikajúci príklad je taký formulár na poistenie PZP, zložitejší wizard, kde nasledujúca obrazovka zobrazuje polia podľa hodnôt stránky predchádzajúcej. 
 
 Nie je úplne vhodný na písanie bežných firemných prezentačných webov (aj keď aj to je možné), aplikácie kde sa veľký dôraz berie na množstvo animácií, a facny funkcionalitu. 
 
@@ -99,12 +99,12 @@ Rozprávku o tom ako prebiehal vývoj tohto rozšírenia si môžete pozrieť na
 ---
 
 ### Binding
-Jednotlivé properties vo viewmodeloch môžete odekorovat Binding atribútmi. 
+Jednotlivé properties vo viewmodeloch môžete odekorovať Binding atribútmi. 
 Týmito atribútmi poviete frameworku akým smerom má povoliť bindovanie z a do viewmodelu.
 
 Možnosti ktoré dnes máme sú:
 
-- **None** – Čiže bindovanie je zakázané, a ak príde daná property z klienta bude ignorovaná. Poprípade, an klienta ani nepríde
+- **None** – Čiže bindovanie je zakázané, a ak príde daná property z klienta bude ignorovaná.
 - **Both** – Default správanie, kde prebieha prenos dať medzi klientom a serverom
 - **ClientToServer**, **ServerToClient** sú samo popisné  
 
@@ -114,7 +114,7 @@ Možnosti ktoré dnes máme sú:
 
  ![Page Livecycle](/assets/posts/2016/20161118_01_PageLiveCycle.png){: class="img img-responsive"}
 
-Ako možete videť na hore uvedenom obrázku, je veľmi podobný tomu z ASP.NET WebForms.
+Ako môžete vidieť na hore uvedenom obrázku, je veľmi podobný tomu z ASP.NET WebForms.
 
 <br/>
 
@@ -138,11 +138,11 @@ Pre WebForm vývojárov je prechod naozaj jednoduchý.
 ## Komponenty
 ---
 
-Na [stránke projektu](https://www.dotvvm.com/docs/latest) nájdete zoznam základných konponent ktoré framework obsahuje. Iné si môžeme dokúpiť (O tom poviem neskôr), alebo si sami veľmi jednoducho vytvoriť. 
+Na [stránke projektu](https://www.dotvvm.com/docs/latest) nájdete zoznam základných komponent ktoré framework obsahuje. Iné si môžeme dokúpiť (O tom poviem neskôr), alebo si sami veľmi jednoducho vytvoriť. 
 
-Framework nám ponúka **dve možnosti vytvárania component**.
+Framework nám ponúka **dve možnosti vytvárania komponent**.
 
-- Jedna sú takzvané **markup controls**, tie majú koncovku dotcontrol. Je to kus markupu, ktorý môžeme opakovať v rôznych stránkach. Ako napríklad Editor adries. (Adresa dorusenia, Fakturačná adresa) na jednej stránke.
+- Jedna sú takzvané **markup controls**, tie majú koncovku dotcontrol. Je to kus markupu, ktorý môžeme opakovať v rôznych stránkach. Ako napríklad Editor adries. (Adresa doručenia, fakturačná adresa) na jednej stránke.
 
 - Potom máme **Code-only controls** tieto nemajú žiadny markup, a všetko sa generuje v kóde. Vieme ich zabaliť do samostatného DLL súboru. Ich vývoj je ale o niečo (možno trošku viac) zložitejší.
 
@@ -176,7 +176,7 @@ Aktuálne je DotVVM vo verzii 1.0.5
 
  - RTM je pre plný .NET framework
 
-Ppracujú na podpore pre .NET Core. Niežeby framework nebol funkčný, ale proste len nieje vo verzii RTM. Pevne verím že počas najbližších pár mesiacov bude RTM verzia, keďže dnes tu máme alfa verziu.
+Pracujú na podpore pre .NET Core. Niežeby framework nebol funkčný, ale proste len nie je vo verzii RTM. Pevne verím že počas najbližších pár mesiacov bude RTM verzia, keďže dnes tu máme alfa verziu.
 
 Ako som spomínal na začiatku, je to open source framework, a jeho kompletné zdrojové kódy si môžete pozrieť na [githube](https://github.com/riganti/dotvvm). Tak ako Tomáš hovorí, je a vždy bude open source.
 
@@ -203,7 +203,7 @@ Termín uvedenia na trh v tomto momente netuším.
 
 - Ďalšia vec ktorá sa plánuje sú takzvané [Dynamic data](https://github.com/riganti/dotvvm-dynamic-data). Neviem či ste stým reálne v .NETe niekedy pracovali. Ja osobne nie, len si tak matne spomínam že to vedelo vygenerovať komplet formulár na základe jeho modelu a doplnkových atribútov. Len pre úplnosť doplním blog post o [DotVVM Dynamic data](https://www.dotvvm.com/blog/6/Preview-of-DotVVM-Dynamic-Data-Released).
 
-- Potom tu máme veci ako Mimifikácia a bundling JS a CSS súborov.
+- Potom tu máme veci ako Minifikácia a bundling JS a CSS súborov.
 
 - Hosting DotVVM aplikácie vo WebView v Xamarin aplikácii, alebo UWP aplikácii. Je to celkom zaujímavé, nechajme sa prekvapiť rýchlosťou takejto aplikácie.
 
