@@ -1,54 +1,42 @@
 ﻿<nav>
-  <a href="/">
-    <img src="/assets/img/avatar.jpg" id="" class="img-rounded img-responsive" />
-  </a>
-  <div id="bio">
-    <p>
-      C#, .NET a Javascript vývojár, milovník každej tech. novinky, geek, ktorý by potreboval keby deň mal aspoň 48 hodín, autor
-      <a href="http://nasevydavky.sk" target="_blank">nasevydavky.sk</a>,
-      <a href="http://pouzite.sk" target="_blank">pouzite.sk</a>, a
-      <a href="http://savilio.com" target="_blank">savilio.com</a>.
-    </p>
-  </div>
-  <div id="social" class="text-center">
-    {% include social.html %}
-  </div>
-  <br/>
-  <div>
-      <h3><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> &nbsp; Kategórie</h3>    
-      <ul class="tag-box inline list-unstyled">
-        {% assign category_list = site.categories %}  
-        {% if category_list.first[0] == null %}
-            {% for tag in category_list %} 
+    <a href="/">
+        <img src="/assets/img/avatar.jpg" id="" class="img-rounded img-responsive" />
+    </a>
+    <div id="bio">
+        <p>
+            C#, .NET a Javascript vývojár, milovník každej tech. novinky, geek, ktorý by potreboval keby deň mal aspoň 48 hodín, autor
+            <a href="http://nasevydavky.sk" target="_blank">nasevydavky.sk</a>,
+            <a href="http://pouzite.sk" target="_blank">pouzite.sk</a>, a
+            <a href="http://savilio.com" target="_blank">savilio.com</a>.
+        </p>
+    </div>
+    <div id="social" class="text-center">
+        {% include social.html %}
+    </div>
+    <br/>
+    <div>
+        <h3><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> &nbsp; Kategórie</h3>
+        <ul class="tag-box inline list-unstyled">
+            {% assign category_list = site.categories %} {% if category_list.first[0] == null %} {% for tag in category_list %}
             <li><a href="/categories#{{ tag }}">{{ tag | capitalize }}</a><small>({{ site.tags[tag].size }})</small></li>
-            {% endfor %}
-        {% else %}
-            {% for tag in category_list %} 
+            {% endfor %} {% else %} {% for tag in category_list %}
             <li><a href="/categories#{{ tag[0] }}">{{ tag[0] | capitalize }}</a> <small>({{ tag[1].size }})</small></li>
-            {% endfor %}
-        {% endif %}
-        {% assign category_list = nil %}
-      </ul>
-  </div>
-  <br/>
-  <div>
-      <h3><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> &nbsp; Štítky</h3>    
-      <ul class="tag-box inline list-unstyled">
-        {% assign tags_list = site.tags %}  
-        {% if tags_list.first[0] == null %}
-            {% for tag in tags_list %} 
+            {% endfor %} {% endif %} {% assign category_list = nil %}
+        </ul>
+    </div>
+    <br/>
+    <div>
+        <h3><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> &nbsp; Štítky</h3>
+        <ul class="tag-box inline list-unstyled">
+            {% assign tags_list = site.tags %} {% if tags_list.first[0] == null %} {% for tag in tags_list %}
             <li><a href="/tags#{{ tag }}">{{ tag | capitalize }}</a><small>({{ site.tags[tag].size }})</small></li>
-            {% endfor %}
-        {% else %}
-            {% for tag in tags_list %} 
+            {% endfor %} {% else %} {% for tag in tags_list %}
             <li><a href="/tags#{{ tag[0] }}">{{ tag[0] | capitalize }}</a> <small>({{ tag[1].size }})</small></li>
-            {% endfor %}
-        {% endif %}
-        {% assign tags_list = nil %}
-      </ul>
-  </div>  
-  <br/>
-  <div class="text-center">
-    &copy; Michal Krchňavý, 2015
-  </div>  
+            {% endfor %} {% endif %} {% assign tags_list = nil %}
+        </ul>
+    </div>
+    <br/>
+    <div class="text-center">
+        &copy; Michal Krchňavý, 2017
+    </div>
 </nav>
